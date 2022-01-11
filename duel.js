@@ -12,11 +12,9 @@ class Unit extends Card{
         this.res = res;
     }
     attack(target){
-<<<<<<< HEAD
-        target.res = target.res - this.power;
-=======
 
->>>>>>> 27facb96013193c1d2217a976542973f976326b0
+        target.res = target.res - this.power;
+
     }
 }
 
@@ -29,15 +27,11 @@ class Effect extends Card{
     }
     play(target){
         if( target instanceof Unit){
-<<<<<<< HEAD
             if(stat = "power"){
                 target.power = target.power + this.mag;
             }else{
                 target.res = target.res + this.mag
             }
-=======
-            target.stat
->>>>>>> 27facb96013193c1d2217a976542973f976326b0
         } else {
             throw Error("target must be a unit");
         }
